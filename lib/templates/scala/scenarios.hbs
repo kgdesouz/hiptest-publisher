@@ -1,0 +1,11 @@
+package {{{ context.package }}};
+
+import junit.framework.TestCase;
+
+abstract class {{{ clear_extension context.filename }}} extends Login {{#curly}}
+{{#indent}}
+val host =  AuvikConstants.RootURL
+{{#each rendered_children.scenarios}}{{{this}}}
+{{/each}}
+{{/indent}}
+{{/curly}}
